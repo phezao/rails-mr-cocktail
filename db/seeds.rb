@@ -1,4 +1,3 @@
-
 puts 'fetching data from the web'
 response = RestClient.get('https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list')
 json = JSON.parse(response.body, symbolize_names: true)
