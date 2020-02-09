@@ -1,9 +1,11 @@
-<h1>Add a new dose!</h1>
+<div class="container">
+  <h1>Add a new dose!</h1>
 
-<%= simple_form_for [@cocktail, @dose] do |f| %>
-  <%= f.input :description %>
-  <%= f.association :ingredient %>
-  <%= f.button :submit, class: 'btn btn-primary' %>
-<% end %>
+  <%= simple_form_for [@cocktail, @dose] do |f| %>
+    <%= f.input :description %>
+    <%= f.association :ingredient %>
+    <%= f.button :submit, class: 'btn btn-primary' %>
+  <% end %>
 
-<%= link_to 'Return', cocktail_path(@cocktail), class: 'btn btn-outline-secondary mt-3' %>
+  <%= link_to 'Return', cocktail_path(@cocktail), class: 'btn btn-outline-secondary mt-3' %>
+</div>

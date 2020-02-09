@@ -1,0 +1,25 @@
+.carousel-inner img {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-caption{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-30%);
+  h1{
+    font-weight: bold;
+    text-shadow: 1px 1px 10px #000;
+  }
+  h3{
+    text-shadow: 1px 1px 10px #000;
+  }
+}
+
+.padding{
+  padding-top: 16px;
+}
+
+.title{
+  font-weight: bolder;
+}
